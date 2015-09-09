@@ -5,34 +5,44 @@ namespace Atrox\Haikunator;
 class Haikunator
 {
     public static $ADJECTIVES = [
-        "autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark",
-        "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter",
+        "misty", "silent", "dry", "dark", "warm", "delightful", "eager", "helpful",
+        "icy", "delicate", "quiet", "cool", "silly", "clever", "gifted", "careful",
         "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue",
-        "billowing", "broken", "cold", "damp", "falling", "frosty", "green",
-        "long", "late", "lingering", "bold", "little", "morning", "muddy", "old",
-        "red", "rough", "still", "small", "sparkling", "throbbing", "shy",
-        "wandering", "withered", "wild", "black", "young", "holy", "solitary",
-        "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine",
-        "polished", "ancient", "purple", "lively", "nameless", "lucky", "odd", "tiny",
-        "free", "dry", "yellow", "orange", "gentle", "tight", "super", "royal", "broad",
-        "steep", "flat", "square", "round", "mute", "noisy", "hushy", "raspy", "soft",
-        "shrill", "rapid", "sweet", "curly", "calm", "jolly", "fancy", "plain", "shinny"
+        "billowing", "frosty", "green", "cyan", "platinum", "oaken", "copper",
+        "lingering", "bold", "morning", "aluminum", "jeweled", "crystal",
+        "still", "small", "sparkling", "shy", "marble", "zinc",
+        "wandering", "wild", "young", "solitary", "triangular", "mauve", "ringing",
+        "fragrant", "snowy", "proud", "floral", "restless", "fizzy", "brilliant",
+        "polished", "ancient", "purple", "lively", "lucky", "odd", "tiny", "bubbly",
+        "orange", "gentle", "royal", "broad", "emerald", "magenta",
+        "steep", "square", "round", "noisy", "soft", "gray", "azure", "citrine",
+        "rapid", "sweet", "curly", "calm", "jolly", "fancy", "cerulean", "periwinkle",
+        "effervescent", "peachy", "melodic", "whispering", "steep", "brave", "silver",
+        "glamorous", "handsome", "quaint", "adorable", "elegant", "goldenrod"
     ];
 
     public static $NOUNS = [
-        "waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning",
-        "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter",
-        "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook",
-        "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly",
+        "waterfall", "river", "breeze", "moon", "rain", "sea", "morning",
+        "lake", "sunset", "pine", "shadow", "leaf", "dawn", "spring",
+        "forest", "hill", "cloud", "meadow", "sun", "glade", "brook",
+        "butterfly", "dew", "dust", "field", "firefly",
         "feather", "grass", "haze", "mountain", "night", "pond", "darkness",
-        "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder",
-        "violet", "water", "wildflower", "wave", "water", "resonance", "sun",
-        "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper",
-        "frog", "smoke", "star", "atom", "band", "bar", "base", "block", "boat",
-        "term", "credit", "art", "fashion", "truth", "disk", "math", "unit", "cell",
-        "scene", "heart", "recipe", "union", "limit", "bread", "toast", "bonus",
-        "lab", "mud", "mode", "poetry", "tooth", "hall", "king", "queen", "lion", "tiger",
-        "penguin", "kiwi", "cake", "mouse", "rice", "coke", "hola", "salad", "hat"
+        "snowflake", "sky", "thunder", "lightning", ""
+        "violet", "wave", "ocean", "dream", "cherry", "tree", "fog", "frost", 
+        "frog", "smoke", "star", "atom", "catamaran", "piano",
+        "heart", "lion", "tiger", "ocelot", "fox", "mantis", "wolf"
+        "penguin", "kiwi", "cake", "mouse", "coyote", "elephant", "alpaca",
+        "aardvark", "albatross", "anaconda", "antlion", "basilisk", "beetle",
+        "jay", "bobcat", "camel", "capybara", "caribou", "caterpillar",
+        "catfish", "cardinal", "chameleon", "cheetah", "chinchilla", "chipmunk",
+        "koi", "condor", "crane", "crocodile", "crow", "dolphin", "dove",
+        "eagle", "elk", "falcon", "flamingo", "gazelle", "gecko", "giraffe",
+        "hedgehog", "ibex", "kangaroo", "koala", "ladybug", "lemur", "llama",
+        "lynx", "lyrebird", "macaw", "marlin", "mockingbird", "moose", "moth",
+        "newt", "narwhal", "otter", "owl", "parrot", "panda", "quail", "rhinoceros",
+        "salamander", "seahorse", "starling", "tapir", "turtle", "wallaby", "walrus",
+        "whale", "wren", "zebra", "dandelion", "tulip", "sunflower", "daffodil", "lilac",
+        "marigold", "pearl"
     ];
 
     /**
