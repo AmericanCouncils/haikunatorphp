@@ -65,6 +65,31 @@ class HaikunatorTest extends PHPUnit_Framework_TestCase {
         $this->assertRegExp("/((?:[a-z][a-z]+))(-)((?:[a-z][a-z]+))(-)(AAAA)$/i", $haikunate);
     }
 
+    public function testIndexScrambleUniqueness()
+    {
+        $this->assertEquals(128*128, Haikunator::possibleCombos());
+        $n = [];
+        for ($i = 0; $i < 128*128; ++$i) {
+            $n[] = Haikunator::indexToScramble($i);
+        }
+        $this->assertEquals(Haikunator::possibleCombos(), count(array_unique($n)));
+    }
+
+    public function testIndexScrambleConversion()
+    {
+        for ($i = 0; $i < 128*128; ++$i) {
+            $this->assertEquals($i, Haikunator::scrambleToIndex(Haikunator::indexToScramble($i)));
+        }
+    }
+
+    public function testScrambleHaikuConversion()
+    {
+        $this->assertEquals(["honest", "malamute"], Haikunator::indexToHaikuPair(0));
+        $this->assertEquals(["clever", "panda"], Haikunator::indexToHaikuPair(1));
+        $this->assertEquals(0, Haikunator::haikuPairToIndex("honest", "malamute"));
+        $this->assertEquals(1, Haikunator::haikuPairToIndex("clever", "panda"));
+    }
+
     public function testCustomNounsAndAdjectives()
     {
         Haikunator::$ADJECTIVES = ['FAIL'];
@@ -84,5 +109,4 @@ class HaikunatorTest extends PHPUnit_Framework_TestCase {
         ]);
         $this->assertRegExp("/(ROFL)(\\.)(COPTER)(\\.)(LLLLLLLL)$/i", $haikunate);
     }
-
 }
